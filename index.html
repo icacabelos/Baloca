@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baloca PWA</title>
-  <link rel="manifest" href="manifest.json" />
+  <title>Bienvenido a Baloca</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="main-bg">
-  <div class="center-content">
-    <h1>Baloca</h1>
-    <p>Selecciona una carta</p>
-    <a href="bar.html" class="btn">🥂 Baloca Bar</a>
-    <a href="dlc.html" class="btn">🍸 Baloca DLC</a>
+  <div class="welcome-container">
+    <h1>Bienvenido a <span class="highlight">Baloca</span></h1>
+    <p>¿Qué carta quieres consultar?</p>
+
+    <div class="card-container">
+      <a href="bar.html" class="card bar-card">
+        <h2>🍷 Baloca Bar</h2>
+        <p>Descubre nuestra carta de cafés, refrescos, vinos y más.</p>
+      </a>
+      <a href="pub.html" class="card pub-card">
+        <h2>🎉 Baloca DLC (Pub)</h2>
+        <p>Consulta los precios de copas y combinados del Pub.</p>
+      </a>
+    </div>
   </div>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
 </body>
 </html>
