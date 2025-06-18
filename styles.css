@@ -109,3 +109,45 @@ body::before {
 .pub-link:hover {
   background-color: #0056b3;
 }
+.welcome-container {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.highlight {
+  color: #ffc107;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 300px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 193, 7, 0.8);
+  color: black;
+}
+
+.bar-card {
+  border: 2px solid #28a745;
+}
+
+.pub-card {
+  border: 2px solid #007bff;
+}
