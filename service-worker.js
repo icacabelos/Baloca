@@ -1,9 +1,9 @@
-const CACHE_NAME = 'baloca-cache-v2';
+const CACHE_NAME = 'baloca-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
   '/bar.html',
-  '/pub.html',
+  '/dlc.html',
   '/styles.css',
   '/icons/icon-192.png'
 ];
