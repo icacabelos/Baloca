@@ -151,3 +151,29 @@ body::before {
 .pub-card {
   border: 2px solid #007bff;
 }
+.social-links {
+  text-align: center;
+  margin-top: 3rem;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.social-btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn.instagram { background-color: #C13584; }
+.social-btn.facebook { background-color: #3b5998; }
+.social-btn.maps { background-color: #34a853; }
+
+.social-btn:hover {
+  opacity: 0.8;
+}

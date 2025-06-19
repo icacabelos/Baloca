@@ -9,36 +9,44 @@
 <body class="main-bg">
   <div class="container">
     <h1>🥂 Carta Baloca Bar</h1>
-    <p>Selecciona una categoría</p>
+    <p>Escolla unha categoría</p>
 
     <div class="btns">
       <button onclick="openSection('cafe')">☕ Café</button>
       <button onclick="openSection('refrescos')">🥤 Refrescos</button>
-      <button onclick="openSection('cervezas')">🍺 Cervezas</button>
+      <button onclick="openSection('cervezas')">🍺 Cervexas</button>
       <button onclick="openSection('licores')">🥃 Licores</button>
       <button onclick="openSection('combinados')">🍹 Combinados</button>
-      <button onclick="openSection('vinos')">🍷 Vinos</button>
+      <button onclick="openSection('vinos')">🍷 Viños</button>
       <button onclick="openSection('mananeo')">🌅 Mañaneo</button>
     </div>
     <!-- Botón extra para ir al Pub -->
     <div class="pub-btn">
-        <a href="pub.html" class="pub-link">🎉 Consulta aquí la carta de precios del pub Baloca DLC</a>
+        <a href="pub.html" class="pub-link">🎉 Consulta aquí a carta de prezos do pub Baloca DLC</a>
     </div>
-  </div>
+    <!-- Redes Sociales y Valoración -->
+    <div class="social-links">
+      <p>📱 Síguenos ou déixanos unha valoración:</p>
+      <a href="https://www.instagram.com/balocacambados/" target="_blank" class="social-btn instagram">Instagram</a>
+      <a href="https://www.facebook.com/baloca.cambados/" target="_blank" class="social-btn facebook">Facebook</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Baloca+Bar+Pontevedra" target="_blank" class="social-btn maps">Google Maps</a>
 
+    </div>
+
+  </div>
   <!-- Overlay Café -->
   <div id="overlay-cafe" class="overlay">
     <div class="overlay-content">
       <div class="content-inner">
         <h2>☕ Café</h2>
         <ul>
-          <li>Solo - 1,30 €</li>
+          <li>So - 1,30 €</li>
           <li>Cortado - 1,30 €</li>
-          <li>Con leche taza - 1,40 €</li>
+          <li>Con leite taza - 1,40 €</li>
           <li>Grande - 1,50 €</li>
-          <li>Solo largo - 1,40 €</li>
+          <li>So largo - 1,40 €</li>
           <li>Americano - 1,50 €</li>
-          <li>Con doble carga - 1,80 €</li>
+          <li>Con dobre carga - 1,80 €</li>
           <li>Colacao / Nesquik - 1,90 €</li>
           <li>Chocolate - 2,50 €</li>
           <li>Irlandés - 5,00 €</li>
@@ -50,13 +58,13 @@
           <li>Con Gotas largas +0,50</li>
           <li>Con Saborizantes MONIN +0,30</li>
         </ul>
-        <h3>Leche</h3>
+        <h3>Leite</h3>
         <ul>
           <li>Natural</li>
-          <li>Sin Lactosa</li>
-          <li>Vegetal de Soja</li>
+          <li>Sen Lactosa</li>
+          <li>Vexetal de Soia</li>
         </ul>
-        <button onclick="closeSection('cafe')" class="close-btn">Cerrar</button>
+        <button onclick="closeSection('cafe')" class="close-btn">Pechar</button>
       </div>
     </div>
   </div>
@@ -67,25 +75,25 @@
       <div class="content-inner">
         <h2>🥤 Refrescos</h2>
         <ul>
-          <li>Agua - 1,30 €</li>
-          <li>Agua C/Gas - 1,50 €</li>
+          <li>Auga - 1,30 €</li>
+          <li>Auga C/Gas - 1,50 €</li>
           <li>Latas - 2,20 €
             <ul>
               <li>Coca-Cola Normal</li>
               <li>Coca-Cola Zero</li>
               <li>Nestea</li>
               <li>Aquarius</li>
-              <li>Aquarius Naranja</li>
+              <li>Aquarius Laranxa</li>
               <li>Kas Limón</li>
-              <li>Kas Naranja</li>
-              <li>Trina Manzana</li>
+              <li>Kas Laranxa</li>
+              <li>Trina Mazá</li>
             </ul>
           </li>
           <li>Botella Cristal - 2,20 €
             <ul>
               <li>Coca-Cola Normal</li>
               <li>Kas Limón</li>
-              <li>Kas Naranja</li>
+              <li>Kas Laranxa</li>
               <li>7up</li>
               <li>Tónica</li>
             </ul>
@@ -93,15 +101,14 @@
           <li>Mosto - 2,20 €</li>
           <li>Bitter Kas - 2,20 €</li>
           <li>Batido Chocolate - 2,20 €</li>
-          <li>Zumo - 2,20 €
+          <li>Zume - 2,20 €
             <ul>
               <li>Piña</li>
-              <li>Naranja</li>
-              <li>Melocotón</li>
+              <li>Laranxa</li>
+              <li>Pexego</li>
             </ul>
           </li>
-          <li>Bifrutas - 2,20 €</li>
-          <li>Energéticas
+          <li>Enerxéticas
             <ul>
               <li>Monster Energy - 2,40 €</li>
               <li>Monster Mango Loco - 2,40 €</li>
@@ -111,7 +118,7 @@
           <li>Sidra - 2,50 €</li>
           <li>Granizado - 2,50 €</li>
         </ul>
-        <button onclick="closeSection('refrescos')" class="close-btn">Cerrar</button>
+        <button onclick="closeSection('refrescos')" class="close-btn">Pechar</button>
       </div>
     </div>
   </div>
@@ -120,20 +127,22 @@
   <div id="overlay-cervezas" class="overlay">
     <div class="overlay-content">
       <div class="content-inner">
-        <h2>🍺 Cervezas</h2>
+        <h2>🍺 Cervexas</h2>
         <ul>
-          <li>Caña Alhambra Roja - 2,50 €</li>
+          <li>Caña Alhambra Reserva Roja - 2,50 €</li>
           <li>Caña clara - 2,50 €</li>
           <li>Corto de caña - 1,90 €</li>
           <li>Caña en Bock - 3,40 €</li>
-          <li>Caña en Jarra - 7,00 €</li>
+          <li>Caña en Xerra - 7,00 €</li>
           <li>Mahou - 2,40 €</li>
-          <li>Alhambra - 2,40 €</li>
           <li>Quinto - 1,70 €</li>
-          <li>Alhambra Roja - 2,50 €</li>
+          <li>Alhambra Especial - 2,40 €</li>
+          <li>Alhambra 1925 - 2,40 €</li>
+          <li>Alhambra Reserva Roja - 2,50 €</li>
+          <li>Alhambra Radler - 2,50 €</li>
           <li>SanMiguel Selecta - 2,50 €</li>
           <li>Mahou Maestra - 2,50 €</li>
-          <li>Mahou Sin Filtrar - 2,50 €</li>
+          <li>Mahou Sen Filtrar - 2,50 €</li>
           <li>Mahou Reserva - 2,50 €</li>
           <li>Corona - 2,90 €</li>
           <li>Cubanisto - 2,90 €</li>
@@ -141,11 +150,10 @@
           <li>La Salve Lucía - 2,50 €</li>
           <li>Leffe - 3,50 €</li>
           <li>Mahou IPA - 1,90 €</li>
-          <li>Cerveza sin Gluten - 2,50 €</li>
-          <li>Cerveza sin Alcohol - 2,50 €</li>
-          <li>Super Bock Green - 2,50 €</li>
+          <li>Cerveza sen Gluten - 2,50 €</li>
+          <li>Cerveza sen Alcohol - 2,50 €</li>
         </ul>
-        <button onclick="closeSection('cervezas')" class="close-btn">Cerrar</button>
+        <button onclick="closeSection('cervezas')" class="close-btn">Pechar</button>
       </div>
     </div>
   </div>
@@ -157,15 +165,15 @@
         <h2>🥃 Licores</h2>
         <ul>
           <li>Chupito - 2,00 €</li>
-          <li>Chupito con hielo - 4,00 €
+          <li>Chupito con xeo - 4,00 €
             <ul>
                 <li>Licor Café(LK)</li>
                 <li>Crema de Orujo</li>
             </ul>
           </li>
-          <li>Chupito con hielo (Destilados) - 5,00 €</li>
+          <li>Chupito con xeo (Destilados) - 5,00 €</li>
           <li>Chupito selecto - 4,00 €</li>
-          <li>Chupito selecto con hielo- 6,50 €</li>
+          <li>Chupito selecto con xeo- 6,50 €</li>
           <li>Chupito Don Julio Blanco - 7,00 €</li>
           <li>Chupito Don Julio Reposado- 8,50 €</li>
           <li>Chupito Don Julio 70 - 15,00 €</li>
@@ -214,8 +222,8 @@
         </ul>
           <h3>Extras</h3>
         <ul>
-          <li>Con energéticas +1,00</li>
-          <li>Vaso ancho o copa +0,50</li>
+          <li>Con enerxéticas +1,00</li>
+          <li>Vaso ancho ou copa +0,50</li>
         </ul>
         
         <button onclick="closeSection('combinados')" class="close-btn">Cerrar</button>
@@ -227,16 +235,16 @@
   <div id="overlay-vinos" class="overlay">
     <div class="overlay-content">
       <div class="content-inner">
-        <h2>🍷 Vinos</h2>
+        <h2>🍷 Viños</h2>
         <ul>
-          <li>Vino - 2,50 €
+          <li>Viño - 2,50 €
             <ul>
                 <li>Albariño</li>
                 <li>Mencia</li>
-                <li>Ribera del Duero</li>
+                <li>Rioja</li>
             </ul>
           </li>
-          <li>Vermut Rojo - 3,00 €</li>
+          <li>Vermut Vermello - 3,00 €</li>
           <li>Vermut Blanco - 3,00 €</li>
           <li>Vermut Mezclado - 3,00 €</li>
           <li>Tinto de Verano - 3,50 €</li>
@@ -245,7 +253,7 @@
           <li>Botella vino - 14,00 €</li>
           <li>Malaga Virgen - 3,00 €</li>
           
-        <button onclick="closeSection('vinos')" class="close-btn">Cerrar</button>
+        <button onclick="closeSection('vinos')" class="close-btn">Pechar</button>
       </div>
     </div>
   </div>
@@ -256,16 +264,16 @@
       <div class="content-inner">
         <h2>🌅 Mañaneo</h2>
         <ul>
-            <li>*Los precios del mañaneo se aplicarán desde las 6:30 hasta las 12:59*</li>
+            <li>*Os prezos do mañaneo aplicaránse Sabados e Domingos dende as 6:30 ata as 12:59*</li>
           <li>Chupitos - 2,50 €</li>
           <li>Combinados estandar - 7,00 €</li>
-          <li>Caña Alhambra Roja - 3,50 €</li>
-          <li>Agua - 1,50 €</li>
+          <li>Caña Alhambra Reserva Roja - 3,50 €</li>
+          <li>Auga - 1,50 €</li>
           <li>Café - 1,50 €</li>
           <li>Colacao - 2,00 €</li>
           <li>Refrescos - 3,00 €</li>
           
-        <button onclick="closeSection('mananeo')" class="close-btn">Cerrar</button>
+        <button onclick="closeSection('mananeo')" class="close-btn">Pechar</button>
       </div>
     </div>
   </div>
