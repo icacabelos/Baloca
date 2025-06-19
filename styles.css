@@ -151,6 +151,7 @@ body::before {
 .pub-card {
   border: 2px solid #007bff;
 }
+/* Hacemos scroll vertical si es necesario */
 .overlay {
   position: fixed;
   top: 0;
@@ -162,16 +163,20 @@ body::before {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  overflow-y: auto; /* ← HABILITA EL SCROLL VERTICAL */
-  padding: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden; /* ← evita desplazamiento lateral */
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
+/* Contenido centrado y con ancho controlado */
 .overlay-content {
-  background: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 1rem;
   padding: 2rem;
   max-width: 600px;
   width: 100%;
   color: #111;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
 }
