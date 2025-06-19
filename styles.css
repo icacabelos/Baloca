@@ -1,3 +1,4 @@
+styles.css
 /* Fondo de la página */
 body.main-bg {
   margin: 0;
@@ -179,15 +180,4 @@ body::before {
   color: #111;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
-}
-.overlay {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.overlay.show {
-  display: flex; /* O mantenerlo con JS si prefieres */
-  opacity: 1;
-  pointer-events: auto;
 }
